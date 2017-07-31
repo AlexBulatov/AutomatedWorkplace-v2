@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ARMv2.Model">
+    <Position X="1" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ARMv2.Model.AmbulatorCard">
+        <TypeIdentifier>
+          <NewMemberFileName>Model.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ARMv2.Model.AmbulatorRecord">
+        <TypeIdentifier>
+          <NewMemberFileName>Model.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ARMv2.PostgresConnector">
+    <Position X="3.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAABAAABEAAAAQAAAAAABUAAAAAEBEAAAAAAAAQA=</HashCode>
+      <FileName>PostgresConnector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
