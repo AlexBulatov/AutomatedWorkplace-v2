@@ -42,7 +42,7 @@ namespace ARMv2
             value.assignments = Clinic.Text;
             value.anamnesis = Anamnesis.Text;
             value.epicrisis = Epicrisis.Text;
-            value.Debt = 0;
+            value.Debt = (int)Debt.Value;
             PostgresConnector.InsertRecord(id, value);
             DialogResult = DialogResult.OK;
             Close();

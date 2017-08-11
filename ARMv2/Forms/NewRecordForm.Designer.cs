@@ -62,9 +62,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Debt = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Debt)).BeginInit();
             this.SuspendLayout();
             // 
             // RecordCancel
@@ -88,6 +92,9 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.Debt);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.PayBox);
             this.groupBox3.Controls.Add(this.label4);
@@ -151,16 +158,16 @@
             // 
             // Epicrisis
             // 
-            this.Epicrisis.Location = new System.Drawing.Point(16, 236);
+            this.Epicrisis.Location = new System.Drawing.Point(16, 258);
             this.Epicrisis.Name = "Epicrisis";
-            this.Epicrisis.Size = new System.Drawing.Size(565, 85);
+            this.Epicrisis.Size = new System.Drawing.Size(565, 63);
             this.Epicrisis.TabIndex = 5;
             this.Epicrisis.Text = "";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(8, 220);
+            this.label14.Location = new System.Drawing.Point(16, 242);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(50, 13);
             this.label14.TabIndex = 4;
@@ -168,7 +175,7 @@
             // 
             // Clinic
             // 
-            this.Clinic.Location = new System.Drawing.Point(16, 156);
+            this.Clinic.Location = new System.Drawing.Point(19, 178);
             this.Clinic.Name = "Clinic";
             this.Clinic.Size = new System.Drawing.Size(567, 61);
             this.Clinic.TabIndex = 3;
@@ -177,7 +184,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(15, 140);
+            this.label13.Location = new System.Drawing.Point(16, 162);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(50, 13);
             this.label13.TabIndex = 2;
@@ -185,7 +192,7 @@
             // 
             // Anamnesis
             // 
-            this.Anamnesis.Location = new System.Drawing.Point(18, 77);
+            this.Anamnesis.Location = new System.Drawing.Point(17, 99);
             this.Anamnesis.Name = "Anamnesis";
             this.Anamnesis.Size = new System.Drawing.Size(565, 60);
             this.Anamnesis.TabIndex = 1;
@@ -194,7 +201,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(14, 61);
+            this.label12.Location = new System.Drawing.Point(16, 83);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(52, 13);
             this.label12.TabIndex = 0;
@@ -398,6 +405,36 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ФИО Владельца:";
             // 
+            // Debt
+            // 
+            this.Debt.Location = new System.Drawing.Point(425, 53);
+            this.Debt.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.Debt.Name = "Debt";
+            this.Debt.Size = new System.Drawing.Size(77, 20);
+            this.Debt.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(508, 55);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "рублей";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(359, 55);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Долг: ";
+            // 
             // NewRecordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -419,6 +456,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Debt)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -459,5 +497,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox PayBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown Debt;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }

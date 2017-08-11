@@ -114,6 +114,8 @@ namespace ARMv2
                 value.epicrisis = myDataReader["epicrisis"].ToString().Trim();
                 value.Payment = (int) myDataReader["payment"];
                 value.ToCard = (int)myDataReader["tocard"];
+                if (myDataReader["debt"].ToString()=="") value.Debt = 0;
+                else value.Debt = (int)myDataReader["debt"];
             }
             myDataReader.Close();
             connector.Close();

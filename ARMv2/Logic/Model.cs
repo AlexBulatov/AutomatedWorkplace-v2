@@ -94,7 +94,6 @@ namespace ARMv2
             private int toCard;
             private DateTime dateVisit;
             private int payment;
-            private int debt;
             public string anamnesis;
             public string assignments;
             public string epicrisis;
@@ -127,8 +126,8 @@ namespace ARMv2
                 set => payment = value;
             }
             public int Debt {
-                get => debt;
-                set => debt = value;
+                get;
+                set;
             }
 
         }

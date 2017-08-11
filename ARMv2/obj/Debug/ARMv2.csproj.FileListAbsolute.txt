@@ -57,3 +57,4 @@ C:\Users\bulka\OneDrive\documents\visual studio 2017\Projects\ARMv2\ARMv2\obj\De
 C:\Users\bulka\OneDrive\documents\visual studio 2017\Projects\ARMv2\ARMv2\obj\Debug\ARMv2.Forms.RedactCardForm.resources
 C:\Users\bulka\OneDrive\documents\visual studio 2017\Projects\ARMv2\ARMv2\obj\Debug\ARMv2.Forms.RedactRecordForm.resources
 C:\Users\bulka\OneDrive\documents\visual studio 2017\Projects\ARMv2\ARMv2\obj\Debug\ARMv2.Forms.Password.resources
+C:\Users\bulka\OneDrive\documents\visual studio 2017\Projects\ARMv2\ARMv2\obj\Debug\ARMv2.ShowRecordForm.resources

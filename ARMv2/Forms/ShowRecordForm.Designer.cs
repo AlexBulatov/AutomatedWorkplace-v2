@@ -61,6 +61,9 @@
             this.Age = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Debt = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -68,6 +71,9 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.Debt);
+            this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.PayBox);
             this.groupBox3.Controls.Add(this.label4);
@@ -151,17 +157,17 @@
             // 
             // Clinic
             // 
-            this.Clinic.Location = new System.Drawing.Point(16, 156);
+            this.Clinic.Location = new System.Drawing.Point(16, 177);
             this.Clinic.Name = "Clinic";
             this.Clinic.ReadOnly = true;
-            this.Clinic.Size = new System.Drawing.Size(567, 81);
+            this.Clinic.Size = new System.Drawing.Size(567, 60);
             this.Clinic.TabIndex = 3;
             this.Clinic.Text = "";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(15, 140);
+            this.label13.Location = new System.Drawing.Point(15, 161);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(50, 13);
             this.label13.TabIndex = 2;
@@ -169,7 +175,7 @@
             // 
             // Anamnesis
             // 
-            this.Anamnesis.Location = new System.Drawing.Point(18, 77);
+            this.Anamnesis.Location = new System.Drawing.Point(15, 98);
             this.Anamnesis.Name = "Anamnesis";
             this.Anamnesis.ReadOnly = true;
             this.Anamnesis.Size = new System.Drawing.Size(565, 60);
@@ -179,7 +185,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(18, 61);
+            this.label12.Location = new System.Drawing.Point(15, 82);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(52, 13);
             this.label12.TabIndex = 0;
@@ -391,8 +397,36 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "Распечатать";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ShowRecord
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(459, 62);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "рублей";
+            // 
+            // Debt
+            // 
+            this.Debt.AutoSize = true;
+            this.Debt.Location = new System.Drawing.Point(396, 62);
+            this.Debt.Name = "Debt";
+            this.Debt.Size = new System.Drawing.Size(35, 13);
+            this.Debt.TabIndex = 13;
+            this.Debt.Text = "label5";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(332, 62);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(58, 13);
+            this.label18.TabIndex = 12;
+            this.label18.Text = "К оплате: ";
+            // 
+            // ShowRecordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -402,7 +436,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "ShowRecord";
+            this.Name = "ShowRecordForm";
             this.Text = "Запись №";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -449,5 +483,8 @@
         private System.Windows.Forms.Label PayBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label Debt;
+        private System.Windows.Forms.Label label18;
     }
 }

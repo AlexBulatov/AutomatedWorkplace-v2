@@ -37,6 +37,7 @@ namespace ARMv2.Forms
             Anamnesis.Text = value.anamnesis;
             Clinic.Text = value.assignments;
             Epicrisis.Text = value.epicrisis;
+            Debt.Value = value.Debt;
         }
 
         private void EnterRecord_Click(object sender, EventArgs e)
@@ -46,6 +47,7 @@ namespace ARMv2.Forms
             value.anamnesis = Anamnesis.Text;
             value.assignments = Clinic.Text;
             value.epicrisis = Epicrisis.Text;
+            value.Debt = (int)Debt.Value;
             PostgresConnector.UpdateRecord(value, id);
             DialogResult = DialogResult.OK;
             Close();

@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ARMv2.Forms;
 
 namespace ARMv2
 {
     public partial class ShowRecordForm : Form
     {
+        readonly int id;
         public ShowRecordForm(int id)
         {
+            this.id = id;
             InitializeComponent();
             Model.AmbulatorRecord record = PostgresConnector.GetRecord(id);
             Model.AmbulatorCard card = PostgresConnector.GetAmbulatorCard(record.ToCard);
@@ -34,6 +37,13 @@ namespace ARMv2
             Anamnesis.Text = record.anamnesis;
             Clinic.Text = record.assignments;
             Epicrisis.Text = record.epicrisis;
+            Debt.Text = record.Debt.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PrintForm form = new PrintForm(id);
+            form.Show();
         }
     }
 }
